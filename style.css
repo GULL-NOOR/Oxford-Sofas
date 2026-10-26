@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+
+    lightblue: #219ebc
+    yellow: #ffb703
+    orange: #fb8500
+    darkblue: #023047
+
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 0px 1rem 0px 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #fb8500;
+}
+
+.team .card h6 {
+    color: #fb8500;
+}
+
+
+nav {
+    background-color: #023047;
+}
+
+.btn{
+    background-color: #023047;
+    color: white;
+}
+.btn:hover{
+    background-color: #fb8500;
+    color: white;
+}
+
+.navbar-brand img{
+    width: 60px;
+    border-radius: 100%;
+}
+
+nav ul li {
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    color: white !important;
+}
+
+nav ul li a:hover{
+    color: #fb8500 !important;
+}
+nav ul li .active{
+    color: #fb8500 !important;
+    border-bottom: 2px solid #fb8500;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    background-color: white;
+}
+
+
+.dropdown-menu li a {
+    color: #023047 !important;
+    text-transform: capitalize;
+}
+
+#carouselExampleCaptions img {
+    height: 550px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #carouselExampleCaptions img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .lookbook img {
+        border-radius: 0px 1rem 0px 1rem;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.gallery img {
+    border-radius: 0px 1rem 0px 1rem;  
+
+}
+ .gallery img:hover{
+     transition: transform 0.5s ease;
+    transform: scale(1.1); 
+}
+
+.lookbook img {
+    border-radius: 0px 1rem 0px 1rem;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.lookbook img:hover{
+    transition: transform 0.7s ease;
+    transform: scale(1.1);
+}
+
+/* About Page */
+.aboutproj img {
+    border-radius: 0px 1rem 0px 1rem;
+}
+
+.aboutproj img:hover{
+    transition: transform 0.7s ease;
+    transform: scale(1.1);
+}
+
+/* Compare Page */
+.compare .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contact page */
+#map {
+    height: 350px;
+    border-radius: 0px 1rem 0px 1rem;
+    border: 2px solid #fb8500;
+}
+
+footer .btn-link{
+    color: white !important;
+}
+

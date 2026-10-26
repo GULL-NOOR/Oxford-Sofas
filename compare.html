@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Oxford Sofas</title>
+    <link rel="icon" type="image/png" href="/image/oxfordlogo.jpeg">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <img src="image/oxfordlogo.jpeg" class="img-fluid" alt="logo">
+            </a>
+            <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+            </span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="west elm sofa.html">west elm sofa</a></li>
+                            <li><a class="dropdown-item" href="blu dot sofa.html">blu dot sofa</a></li>
+                            <li><a class="dropdown-item" href="ikea sofa.html">ikea sofa</a></li>
+                            <li><a class="dropdown-item" href="habiitt.html">habitt sofa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="compare.html">Compare Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container compare my-5">
+            <h2 class="display-5 fw-bold text-center my-5">Compare Sofa Brands</h2>
+
+            <div class="row mb-3">
+                <div class="col-md-6 col-6">
+                    <label for="product1" class="form-label">Select First Product</label>
+                    <select id="product1" class="form-select" onchange="showProductDetails()">
+                        <option value="">Choose a product</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-6">
+                    <label for="product2" class="form-label">Select Second Product</label>
+                    <select id="product2" class="form-select" onchange="showProductDetails()">
+                        <option value="">Choose a product</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="product-details" class="row mt-4"></div>
+        </div>
+    </main>
+
+    <footer class="text-white" style="background-color: #f1f1f1;">
+        <div class="container pt-4">
+            <div class="row text-center ">
+                <div class="col">
+                    <section class="mb-4">
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </section>
+                </div>
+            </div>
+            <div class="row text-dark">
+                <div class="col-md-4 my-3 text-center">
+                    <img src="image/oxfordlogo.jpeg" width="200px" class="img-fluid" alt="logo">
+                </div>
+                <div class="col-md-4 my-3">
+                    <h5>Brands</h5>
+                    <ul style="list-style: none; text-transform: capitalize;">
+                        <li><a class="nav-link" href="west elm sofa.html">west elm sofa</a></li>
+                        <li><a class="nav-link" href="blu dot sofa.html">blu dot sofa</a></li>
+                        <li><a class="nav-link" href="ikea sofa.html">ikea sofa</a></li>
+                        <li><a class="nav-link" href="habiitt.html">habitt sofa</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-3">
+                    <h5>Contact</h5>
+                    <ul style="list-style: none;">
+                        <li><a class="nav-link" href="west elm sofa.html">Email: <b>oxfordsofas@example.com</b></a></li>
+                        <li><a class="nav-link" href="blu dot sofa.html">Phone: +92 123 456789</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Copyright:
+            <a class="text-dark" href="">oxfordsofas.com</a>
+        </div>
+    </footer>
+
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script>
+        const products = {
+            habitt: [
+                { name: "Habitt Sofa Olunton", img: "image/dvh-sofa1.jpg", price: "$120" },
+                { name: "Habitt sofa Supermate", img: "image/dvh-sofa2.jpg", price: "$40" },
+                { name: "Habitt sofa Camel back", img: "image/dvh-sofa3.jpg", price: "$20" }
+            ],
+            "blu dot": [
+                { name: "BluDot Sofa Futon", img: "image/premium_photo-1736194028567-54d9c9f3cc56.avif", price: "$90" },
+                { name: "BluDot Sofa Divan", img: "image/premium_photo-1733514432670-ff1c8631bca6.avif", price: "$30" },
+                { name: "BluDot Sofa Chaies", img: "image/premium_photo-1733514691690-4ff581def209.avif", price: "$15" }
+            ],
+            "west elm": [
+                { name: "WestElm Sofa Hide-a-sofa", img: "image/photo-1555041469-a586c61ea9bc.avif", price: "$200" },
+                { name: "WestElm Sofa Moduler", img: "image/premium_photo-1673548916754-aefad0c0955a.avif", price: "$70" },
+                { name: "WestElm Sofa Vintage", img: "image/photo-1512212621149-107ffe572d2f.avif", price: "$50" }
+            ]
+        };
+
+        function populateProductSelect() {
+            const productSelect1 = document.getElementById("product1");
+            const productSelect2 = document.getElementById("product2");
+
+            let allOptions = [];
+
+            Object.keys(products).forEach(brand => {
+                products[brand].forEach((product, index) => {
+                    const optionText = `${ brand } - ${ product.name }`;
+                    const optionValue = `${ brand}-${ index }`;
+                    allOptions.push({ optionText, optionValue });
+                });
+            });
+
+            allOptions.forEach(option => {
+                let optionElement = document.createElement("option");
+                optionElement.value = option.optionValue;
+                optionElement.textContent = option.optionText;
+
+                let cloneOption1 = optionElement.cloneNode(true);
+                let cloneOption2 = optionElement.cloneNode(true);
+                productSelect1.appendChild(cloneOption1);
+                productSelect2.appendChild(cloneOption2);
+            });
+        }
+
+        function showProductDetails() {
+            const product1Value = document.getElementById("product1").value;
+            const product2Value = document.getElementById("product2").value;
+            const detailsContainer = document.getElementById("product-details");
+            detailsContainer.innerHTML = "";
+
+            let productHtml = "";
+
+            if (product1Value) {
+                const [brand1, index1] = product1Value.split("-");
+                const product1 = products[brand1][index1];
+                productHtml += `
+                    <div class="col-md-6 col-6">
+                        <div class="card">
+                            <img src="${product1.img}" class="img-fluid" alt="${product1.name}">
+                            <h5>${product1.name}</h5>
+                            <p class="text-primary fw-bold">${product1.price}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (product2Value) {
+                const [brand2, index2] = product2Value.split("-");
+                const product2 = products[brand2][index2];
+                productHtml += `
+                    <div class="col-md-6 col-6">
+                        <div class="card">
+                            <img src="${product2.img}" class="img-fluid" alt="${product2.name}">
+                            <h5>${product2.name}</h5>
+                            <p class="text-primary fw-bold">${product2.price}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            detailsContainer.innerHTML = productHtml;
+        }
+
+        window.onload = populateProductSelect;
+    </script>
+</body>
+
+</html>
